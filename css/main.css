@@ -668,6 +668,10 @@ header nav ul li a.bordered {
   opacity: 1;
 }
 
+.sub-nav {margin-bottom: 30px;}
+.sub-nav a {color: #e85151; border-bottom: 0;}
+.sub-nav a:hover {color: #fff;}
+
 
 body {overflow-x: hidden;}
 
