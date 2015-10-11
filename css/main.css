@@ -34,7 +34,16 @@ nav .active a {background: #eaeaea; color: #000;}
 .skills-list li {width: 164px;}
 .progressbar-text {color: #fff !important; font-size: 1.2em; font-weight: bold;}
 #twitter-fav-list {margin-top: 1.25em;}
-#twitter-fav-list a {background: transparent; color: #000; padding: 0;}
+#twitter-fav-list a {background: transparent; color: #000; padding: 0; 
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap; /*Chrome & Safari */ 
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
 .user span span {font-weight: normal; margin-left: 15px;}
 .user span + span:before {content: '\A';}
 .user span + span {background: #fff700; white-space: pre;}
