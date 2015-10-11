@@ -29,6 +29,7 @@ nav .active a {background: #eaeaea; color: #000;}
 .tool-list {margin-top: 1.25em;}
 .tool-list li {margin-left: 15px; margin-bottom: 15px; max-width: 80px;}
 .tool-list a {background: transparent; padding: 0;}
+.reference-list li {margin-bottom: 15px;}
 /*.reference-list a {background: #fff; color: #000;}*/
 .skills-list {opacity: 0;}
 .skills-list li {width: 164px;}
