@@ -5,223 +5,119 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
     
 	<link rel="shortcut icon" href="img/favicon.ico"> 
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/ekko-lightbox.min.css">
+<!--	<link rel="stylesheet" href="css/ekko-lightbox.min.css">-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
-	<title>Maw Shin Portfolio</title>
+	<title>Koh Maw Shin UI/UX Developer</title>
 
 </head>
 <body>
-
-
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Koh Maw Shin</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
 	<header>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <div id="logo">Koh Maw Shin</div>
-                    <div id="subtitle">Frontend Web Developer</div>
+                <div class="col-xs-12 text-center">
+                    <img src="img/profile.jpg" class="profile-pic img-circle" />
+                    <div class="name">Koh Maw Shin</div>
+                    <div class="designation">Web UI/UX Developer</div>
                 </div>
             </div>
         </div>
 	</header>
-
-	<div id="content">
-
-		<section class="intro">
-			<h1>Hello, <span class="nl"></span>welcome to my portfolio site.</h1>
-			<p>I am a graduate from Nanyang Polytechnic, Diploma in Digital Media Design (Interactive Media) based in Singapore. I have completed my National Service in June 2010.</p>
-			<p>I am a design-oriented developer with design background, experienced in front end web developing, proficient in HTML, CSS and Javascript. I'm currently working at a Singapore digital agency: Onyx Island</p>
-            <p>My Specialties are: Front-End Development (XHMTL, HTML 5, CSS, CSS 3, jQuery, Javascript, Responsive CSS frameworks, Electronics Direct Mailer)</p>
-		</section>
-
-		<section class="row">
-			<div class="col-full">
-                <h2><a href="friso-ecomm.html">Friso Ecommerce website static HTML template</a></h2>
-                <p>Creation of responsive HTML templates for Friso regional use to deploy into eCommerce site with their respective local vendor.</p>
-				<ul class="list">
-                	<li>Developing HTML template pages as website toolkit for creating global localisation version in respective countries</li>
-                    <li>Built with Bootstrap 3</li>
-                </ul>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-                <a class="col-1" href="friso-ecomm.html">
-		            <img class="img-responsive" src="img/friso-ecom/friso-ecom1.jpg">
-		        </a>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="col-full">
-                <h2><a href="pacific-arena.html">Pacific Arena</a></h2>
-				<p>Creation of responsive site for subsidiary cruise line of PriceBreaker</p>
-                <ul class="list">
-                	<li>Developing HTML template pages</li>
-                    <li>Built with Bootstrap 3</li>
-                    <li>Work with integration into Laravel framework</li>
-                </ul>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-                <a class="col-1" href="pacific-arena.html">
-		            <img class="img-responsive" src="img/cruise/home.jpg">
-		        </a>
-			</div>
-		</section>
-        
-        <section class="row">
-			<div class="col-full">
-                <h2><a href="ocbc-personal.html">Oversea-Chinese Banking Corporation (OCBC) Singapore Personal Internet Banking</a></h2>
-				<p>I am involved in the development of new modules for the internet banking portal and eventually became the champion developer for the maintenance and on-site support developer.</p>
-                <ul class="list">
-                	<li>Development of HTML pages and front end functionalities for OCBC Personal Internet Banking</li>
-					<li>Client on-site support for front end fixes / functionalities assist with integrating with other vendor and client IT team</li>
-                </ul>
-                <em>Note: require account of OCBC to view application</em>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-                <a class="col-1" href="ocbc-personal.html">
-		            <img class="img-responsive" src="img/tower/ocbc-tower1.png">
-		        </a>
-			</div>
-		</section>
-        
-        <section class="row">
-			<div class="col-full">
-                <h2><a href="ocbc-business.html">Oversea-Chinese Banking Corporation (OCBC) Singapore Business Internet Banking</a></h2>
-				<p>I am involved in assisting other team members in development of the site static HTML for getting in ready for launch and delivery to the client backend vendor.</p>
-                <ul class="list">
-                	<li>Development of HTML pages and front end functionalities for OCBC Personal Internet Banking</li>
-                </ul>
-                <em>Note: require account of OCBC to view application</em>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-                <a class="col-1" href="ocbc-business.html">
-		            <img class="img-responsive" src="img/velocity/ocbc-velocity1.png">
-		        </a>
-			</div>
-		</section>
-        
-        <section class="row">
-			<div class="col-full">
-                <h2><a href="cimb-products.html">CIMB products online application forms</a></h2>
-                <p>I am involved in the development of the single page application products pages with backend using java servlet service.</p>
-				<ul class="list">
-                	<li>Developing HTML pages for 13 products (credit cards, saving account, etc) and front end functionalities with requireJS, ajax post</li>
-					<li>Assist in application deployment</li>
-                </ul>
-                <em>Note: require signing up of CIMB form for reviewing of application</em>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-                <a class="col-1" href="cimb-products.html">
-		            <img class="img-responsive" src="img/cimb/cimb1.png">
-		        </a>
-			</div>
-		</section>
-        
-        <section class="row">
-			<div class="col-full">
-                <h2><a href="lac.html">LAC website</a></h2>
-				<p>Development of a responsive web for GNC subsidiary branch LAC with online catalog of their health supplement products.</p>
-                <ul class="list">
-                	<li>Developing HTML pages</li>
-					<li>Maintance of website</li>
-                    <li>Built with Foundation 4.2, SCSS</li>
-                </ul>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-                <a class="col-1" href="lac.html">
-		            <img class="img-responsive" src="img/lac/lac1.jpg">
-		        </a>
-			</div>
-		</section>
-        
-        <section class="row">
-			<div class="col-full">
-                <h2><a href="lac-campaign.html">LAC Taut SG campaign website</a></h2>
-				<p>Development of a responsive campaign site for the main product - Taut.</p>
-                <ul class="list">
-                	<li>Developing HTML pages</li>
-					<li>Maintance of website</li>
-                    <li>Built with Bootstrap 3</li>
-                </ul>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-                <a class="col-1" href="lac-campaign.html">
-		            <img class="img-responsive" src="img/lac-taut/lac-taut1.jpg">
-		        </a>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="col">
-				<h2>Contact Details</h2>
-                <ul class="list-unstyled">
-                    <li>Email: <a href="mailto:mawshin@hotmail.sg">mawshin@hotmail.sg</a></li>
-                    <li>Mobile: +65 97839025</li>
-                    <li>Skype ID: mawshin.k</li>
-                </ul>
-				<!--<p>
-					Want to work with us? Just send us an <a href="mailto:#">email</a>.
-				</p>
--->			</div>
-			<div class="col">
-				<h2>Connect with me</h2>
-				<p>
-					<a href="https://sg.linkedin.com/pub/maw-shin-koh/38/0/4a0" target="_blank" class="linkedin"><i class="fa fa-linkedin-square"></i></a>
-				</p>
-			</div>
-		</section>
-
-
-		<section class="row">
-			<div class="col-full">
-				<p class="notes">
-					&copy; 2015 All rights reserved.</a>
-				</p>
-			</div>
-		</section>
- 
-	</div>
     
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            <div id="lightbox-content"></div>
-          </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <ul class="list-unstyled contact-details-list">
+                    <li>Email: <a href="mailto:mawshin@hotmail.sg" target="_blank">mawshin@hotmail.sg</a></li>
+                    <li>Skype ID: <strong>mawshin@hotmail.sg</strong></li>
+                    <li>Location: <strong>Singapore</strong></li>
+                    <li class="clearfix"><a href="https://sg.linkedin.com/pub/maw-shin-koh/38/0/4a0" target="_blank" class="social-links linkedin"><i class="fa fa-linkedin-square"></i></a> <a href="https://twitter.com/mawshin" target="_blank" class="social-links twitter"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-8 introduction">
+                <p>I am a design oriented developer with design background, experienced in front-end web developing, proficient in <u><strong>XHTML/HTML5</strong></u>, <u><strong>CSS/3</strong></u> and <u><strong>jQuery</strong></u>. I'm expectionally interested in Responsive web (Progressive enhancement, Graceful degradation), adaptive web, UI/UX and modern front-end workflow tools.</p>
+
+                <p>Pixel perfect makes up majority of my job. My role is to translate wire-frames and mock-ups to front-end user interfaces that adhere's to web standards &amp; usability guidelines and ensure cross browser compatible. I also implement front-end functionalities using JavaScript based on AJAX libraries like jQuery.</p>
+                
+                <p>I'm currently working with a local digital agency <a href="http://onyxisland.com" target="_blank">Onyx Island</a>.</p>
+                
+                <p class="notes">PS: Work aside, I'm an avid sneakers head.</p>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
+    <hr>
+    <section id="tools">
+        <div class="container">
+            <div class="row">
+                <h1 class="section-header text-uppercase text-center">Tools for<br class="responsive-break">Form +<br class="responsive-break">Functions</h1>
+                <div class="col-sm-12 text-center">
+                    <ul class="list-inline tool-list">
+                        <li><a href="http://brackets.io/" target="_blank"><img src="img/brackets.png" title="Adobe Brackets" alt="Adobe Brackets" class="img-responsive" /></a></li>
+                        <li><img src="img/photoshop.jpg" title="Adobe Photoshop" alt="Adobe Photoshop" class="img-responsive" /></li>
+                        <li><img src="img/illustrator.jpg" title="Adobe Illustrator" alt="Adobe Illustrator" class="img-responsive" /></li>
+                        <li><img src="img/dreamweaver.jpg" title="Adobe Dreamweaver" alt="Adobe Dreamweaver" class="img-responsive" /></li>
+                        <li><a href="http://getbootstrap.com/" target="_blank"><img src="img/boostrap_logo.svg" title="Twitter Bootstrap" alt="Twitter Bootstrap" class="img-responsive" /></a></li>
+                        <li><a href="http://foundation.zurb.com/" target="_blank"><img src="img/why-the-yeti.svg" title="Zurb Foundation" alt="Zurb Foundation" class="img-responsive" /></a></li>
+                        <li><a href="http://compass-style.org/" target="_blank"><img src="img/compass.png" title="Compass - CSS Authoring framework" alt="Compass - CSS Authoring framework" class="img-responsive" /></a></li>
+                        <li><a href="http://gruntjs.com/" target="_blank"><img src="img/grunt.png" title="Grunt Javascript Task Runner" alt="Grunt Javascript Task Runner" class="img-responsive" /></a></li>
+                        <li><a href="http://gulpjs.com/" target="_blank"><img src="img/gulp.png" title="Gulp automate workflow" alt="Gulp automate workflow" class="img-responsive" /></a></li>
+                        <li><a href="https://trello.com/" target="_blank"><img src="img/trello-icon.png" title="Trello" alt="Trello" class="img-responsive" /></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <ul class="list-inline reference-list">
+                        <li><a href="https://css-tricks.com/" target="_blank">css-tricks.com</a></li>
+                        <li><a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine.com</a></li>
+                        <li><a href="http://caniuse.com/" target="_blank">caniuse.com</a></li>
+                        <li><a href="http://sass-guidelin.es/" target="_blank">sass-guidelin.es</a></li>
+                        <li><a href="https://github.com/" target="_blank">github.com</a></li>
+                        <li><a href="http://codepen.io/" target="_blank">codepen.io</a></li>
+                    </ul>
+                </div>
+                <div id="skills" class="col-sm-12 text-center">
+                    <h1 class="section-header text-uppercase text-center">Skills</h1>
+                    <ul class="list-inline skills-list">
+                        <li><div id="xhtml-gauge"></div></li>
+                        <li><div id="html-gauge"></div></li>
+                        <li><div id="jquery-gauge"></div></li>
+                        <li><div id="scss-gauge"></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<hr>
+    <section class="container">
+        <h1 class="section-header text-uppercase text-center">Favourite<br class="responsive-break">Tweets</h1>
+        <div id="twitter-fav-list" class="row">
+            
+        </div>
+    </section>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script>
@@ -231,10 +127,11 @@
 	}
 	</script>
 
-	<script src="js/bootstrap.js"></script>
-	<script src="js/ekko-lightbox.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-	<script src="js/main.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/waypoints.min.js" type="text/javascript"></script>
+    <script src="js/progressbar-min.js" type="text/javascript"></script>
+    <script src="js/twitterFetcher.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
