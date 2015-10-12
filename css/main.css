@@ -56,13 +56,12 @@ nav .active a {background: #eaeaea; color: #000;}
 nav + section {margin-top: 4.25em;}
 .sticky-nav__name {font-family: 'Playfair Display', serif; font-weight: bold; font-size: 3em; line-height: 1;}
 .sticky-nav__designation {color: #bdbdbd; font-size: 1.5em; font-weight: 300; line-height: 1; padding-bottom: 1.25em;}
-.portfolio-list section {border-bottom: 1px solid #dedede;}
+.portfolio-list section {border-bottom: 1px solid #dedede; padding: 1.25em 0;}
 .portfolio-list section:first-child {padding-top: 0;}
 .portfolio-list a {background: #fff700; color: #000;}
 .project-title {font-family: 'Playfair Display', serif; font-size: 1.5em; font-weight: bold;}
 .project-image {margin: 20px 0;}
 .project-image a {background: transparent; padding: 0;}
-
 
 @media (min-width: 992px) {
     .sticky-nav {position: fixed;}

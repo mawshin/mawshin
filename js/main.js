@@ -59,6 +59,8 @@
             twitterFetcher.fetch(configFeed);
         }
         
+        var flag = 0;
+        
         if($('#xhtml-gauge').length > 0){
             function animateChart(){
                 var circlexHTML = new ProgressBar.Circle('#xhtml-gauge', {
@@ -132,8 +134,9 @@
             
             $('#skills').waypoint(function(direction) {
                 // do stuff
-                if(direction == 'down'){
+                if(direction == 'down' && flag === 0){
                     animateChart();
+                    flag = 1;
                     $('.skills-list').fadeTo( 400 , 1);
                 };
             }, { offset: 500 });
