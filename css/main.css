@@ -33,7 +33,7 @@ nav .active a {background: #eaeaea; color: #000;}
 /*.reference-list a {background: #fff; color: #000;}*/
 .skills-list {opacity: 0;}
 .skills-list li {width: 164px;}
-.progressbar-text {color: #fff !important; font-size: 1.2em; font-weight: bold;}
+.progressbar-text {font-size: 1.2em; font-weight: bold;}
 #twitter-fav-list {margin-top: 1.25em;}
 #twitter-fav-list a {background: transparent; color: #000; padding: 0; 
     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
