@@ -5,7 +5,7 @@ nav .container {padding-top: 0;}
 nav a {background: transparent; color: #555;}
 nav .active a {background: #eaeaea; color: #000;}
 .navbar-toggle {
-    border-color: #0ac5f4;
+    border: 0;
 }
 .navbar-toggle .icon-bar {
     background-color: #222;

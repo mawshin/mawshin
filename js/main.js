@@ -67,9 +67,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#ededed',
+                    trailColor: '#cc0000',
                     duration: 1500,
-                    fill: '#cc0000',
+                    //fill: '#cc0000',
                     text: {
                         value: '0'
                     },
@@ -84,9 +84,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#ededed',
+                    trailColor: '#cc0000',
                     duration: 1500,
-                    fill: '#cc0000',
+                    //fill: '#cc0000',
                     text: {
                         value: '0'
                     },
@@ -101,9 +101,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#ededed',
+                    trailColor: '#cc0000',
                     duration: 1500,
-                    fill: '#cc0000',
+                    //fill: '#cc0000',
                     text: {
                         value: '0'
                     },
@@ -118,9 +118,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#ededed',
+                    trailColor: '#cc0000',
                     duration: 1500,
-                    fill: '#cc0000',
+                    //fill: '#cc0000',
                     text: {
                         value: '0'
                     },
