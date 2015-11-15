@@ -6,9 +6,6 @@
     // *************************************************************************************************** //
     // *************************************************************************************************** //
 
-    //var neue = window.neue || {};
-    
-
     $(function () {
         
 //        var imageLoaded;
@@ -143,6 +140,42 @@
         };
         
     });
+    
+    
+    var pass = "2530b43a2b667f0ffc3586ab016950d20cd20650", user = "35675e68f4b5af7b995d9205ad0fc43842f16450";
+    var cookieExpiry = 15; //num of minutes
+    
+    if($('#loginform').length > 0){
+        Cookies.remove('access');
+
+        $('#submit').click(function(){
+            $('#loginform').submit(function(e){
+                e.preventDefault();
+                var hashPass = CryptoJS.SHA1($('#password').val()).toString(CryptoJS.enc.Hex);
+                var hashUser = CryptoJS.SHA1($('#username').val()).toString(CryptoJS.enc.Hex);
+                if(hashPass === pass && hashUser === user)
+                {
+                    var currentDate = new Date();
+                    var expiryDate = new Date(currentDate.getTime() + (cookieExpiry * 60 * 1000));
+                    Cookies.set('access', expiryDate , { expires: expiryDate });
+                    setTimeout(function(){ window.location.href="portfolio-listing.html" }, 1);
+                }
+                else
+                {
+                    alert("Invalid credential, please contact me at mawshinkoh@yahoo.com.sg and I'll share the login with you! Thanks.");
+                }
+            });
+            //alert(Cookies.get('access'));
+        });
+    }
+    
+    if($('.portfolio-list').length > 0){
+        if( Cookies.get('access') === undefined ){
+            window.location.href = "portfolio.html";
+        } else {
+            $('.portfolio-list').show();   
+        }   
+    }
 
 })(jQuery);
 
