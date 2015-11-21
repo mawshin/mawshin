@@ -49,7 +49,7 @@ nav .active a {background: #eaeaea; color: #000;}
 .user span + span:before {content: '\A';}
 .user span + span {background: #fff700; white-space: pre;}
 .tweet {margin-top: 15px;}
-.tweet a + a {display: block;}
+/*.tweet a + a {display: block;}*/
 .timePosted {font-size: 12px;}
 
 .sticky-nav {font-size: 14px;}
