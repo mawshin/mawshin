@@ -281,7 +281,7 @@
                             }
                         }
                         if (printUser) {
-                            op += '<div class="user">' + strip(authors[n].innerHTML) +
+                            op += '<div class="user">' + strip(authors[n].innerHTML.replace('data-src-2x','src')) +
                                 '</div>';
                         }
                         op += '<p class="tweet">' + strip(tweets[n].innerHTML) + '</p>';
