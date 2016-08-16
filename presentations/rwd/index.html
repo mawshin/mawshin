@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Responsive web design sharing session</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			::selection {
+			  background: #f29100; /* WebKit/Blink Browsers */
+			}
+			::-moz-selection {
+			  background: #f29100; /* Gecko Browsers */
+			}
+
+			.has-light-background {color: black;}
+
+			.reveal .has-light-background h1, .reveal .has-light-background h2, .reveal .has-light-background h3, .reveal .has-light-background h4, .reveal .has-light-background h5, .reveal .has-light-background h6 {color: #a3a3a3;}
+
+
+			.reveal li {margin-bottom: 20px;}
+
+			.notes {font-size: 12px !important;}
+			
+			.reveal a {
+				color: white;
+				padding: 0 10px; 
+				transition: background-color 0.2s ease;
+				background-size: 100% 200%;
+			    background-image: linear-gradient(to bottom, #f29100 50%, transparent 50%);
+			    -webkit-transition: background-position 0.2s ease;
+			    -moz-transition: background-position 0.2s ease;
+			    transition: background-position 0.2s ease;
+			}
+			.reveal a:hover {background-position: 0 -99%; color: #f29100;}
+			.reveal a:active {background-color: transparent; color: #f29100;}
+
+			.reveal dt {
+				font-weight: normal;
+				margin-bottom: 10px;
+			}
+
+			.reveal dd {
+				display: list-item;
+				list-style-type: decimal;
+				margin-bottom: 15px;
+			}
+			
+			.reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled {border-right-color: #f29100;}
+			.reveal .controls .navigate-down, .reveal .controls .navigate-down.enabled {border-top-color: #f29100;}
+			.reveal .controls .navigate-right, .reveal .controls .navigate-right.enabled {border-left-color: #f29100;}
+			.reveal .controls .navigate-up, .reveal .controls .navigate-up.enabled {border-bottom-color: #f29100;}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Designing for responsive web</h1>
+				</section>
+				<!-- slide 1 -->
+				<section>
+					<section data-background="#ffffff">
+						<h2>Best practices for responsive designs</h2>
+					</section>
+					<section>
+						<h5><a href="http://zurb.com/word/graceful-degradation" target="_blank">Graceful Degradation</a> vs. <a href="http://zurb.com/word/progressive-enhancement" target="_blank">Progressive Enhancement</a></h5>
+						<p>Responsive web concept started out with <em>"Graceful Degradation"</em> as it is too costly to convert existing static websites to be responsive for the rise of mobile devices. However, mobile statistics is rising for web browsing hence <a href="https://studio.uxpin.com/blog/a-hands-on-guide-to-mobile-first-design/" target="_blank">Mobile-first</a> (Progressive Enhancement) approach is introduced for website / web apps getting a fresh start.</p>
+						<ul>
+							<li class="fragment">Designing from smaller devices upwards to larger ones will help to create <em>mobile friendly</em> version.
+								<ul>
+									<li>Content displayed has been prioritised so smaller devices are showing the key information needed</li>
+									<li>Visuals like graphic, animation are slowing enhanced into the site on larger devices as they have better support features eg. better bandwidth on WiFi, better devices specifications</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<p>As like many companies, projects usually kick off with the mockup done on desktop based thus having the need to follow the concept of "Graceful Degradation".</p>
+						<br />
+						<p class="fragment fade-down"><strong>Pactice Thoughtful Reduction</strong></p>
+						<p class="fragment fade-down">In his book, “The Laws of Simplicity”, designer John Maeda introduces the concept of “thoughtful reduction.” He says:</p>
+						<blockquote class="fragment fade-down">
+							“When in doubt, just remove. But be careful of what you remove.”
+						</blockquote>
+					</section>
+					<section>
+						<p>Responsive web design lies very much between design and front end code hence a lot of articles online is covering more on breakpoints and technical executions, I have sourced out articles which is of designing perspective below.</p>
+						<br />
+						<p>Here are some useful read:</p>
+
+						<ol>
+							<li><a href="http://thenextweb.com/dd/2015/10/19/10-rules-of-best-practice-for-responsive-design/" target="_blank">10 rules of best practice for responsive design</a></li>
+							<li><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/" target="_blank">Guidelines for responsive web design: What It Is and How To Use It</a></li>
+							<li><a href="http://webdesign.tutsplus.com/articles/designing-for-a-responsive-web--webdesign-3850" target="_blank">Designing for a Responsive Web <span class="notes">**Must read; covers grid layout, some design should be refrain from</a></li>
+						</ol>
+					</section>
+				</section>
+				<!-- slide 1 -->
+
+				<!-- slide 2 -->
+				<section>
+					<section>
+						<h2>When designing for responsive web...</h2>
+					</section>
+					<section>
+						<p>Here are some pointers to remember:</p>
+						<ol>
+							<li class="fragment">
+								<p><strong>Icon/graphic</strong></p>
+								<p>When selecting websites' icons, usually I will recommand choosing from <a href="http://fontello.com/" target="_blank">Fontello</a> or <a href="https://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font awesome</a> library to use in the mockup.</p> 
+								<p>As they are font-based icons so they are easily controlled in terms of size, color and also they are "vector" based hence we will not need to prepare additional hi-resolution images for <a href="http://www.sitepoint.com/support-retina-displays/" target="_blank">retina devices</a>.</p>
+								<p>When possible such graphics <em>(read section: "<a href="http://design.tutsplus.com/tutorials/svg-files-from-illustrator-to-the-web--vector-20899" target="_blank">When would I use SVG?</a>")</em> should be done on Illustrator and bring over to Photoshop as Smart Object. As Adobe CC Suite has help to ease the exporting of <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics" target="_blank">SVG</a> from Illustrator to Dreamweaver by simply copying the graphic and it converts to code directly.</p>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="2">
+							<li>
+								<p><strong>Avoid enforcing fixed heights and widths</strong></p>
+								<p>In a perfect world, all the content would be written and finalised before a design was created. During design stage, content placeholder length are usually choosen and trimmed to be the most ideal plesant looking in the mockups.</p>
+								<div style="text-align: center;"><img data-src="images/equal-height-not.png" style="max-width: 75%;" /></div>
+								<p class="notes" style="text-align: center;">Continue to on next slide</p>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="2">
+							<li>
+								<p><strong>Avoid enforcing fixed heights and widths</strong></p>
+								<p>As responsive web will require the width and height of the website to be fluid hence design which fixed the width and height will impose issue on the development side which might cause end product to not have the optimal experience.</p>
+
+								<p>This is also important point for CMS driven website, where the website owner might have access to add on items onto the website and constraint will not be of an issue. Eg. like the navigation bar need to have its content architectured from the start so that there will be a structure to follow when adding sections onto the website.</p>
+								<figure style="text-align: center;">
+									<img data-src="images/navbar-sample.png" style="max-width: 75%;" />
+									<figcaption class="notes">The screenshot above will not allow CMS manager to add on top level navigation into the navigation bar due to space restriction hence they might need to have new content structured into the sub level.</figcaptions>
+								</figure>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="3">
+							<li>
+								<p><strong>Understanding of font stacks for web</strong></p>
+								<p><a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web safe fonts</a> are fonts that are pre-installed by many operating systems. While not all systems have the same fonts installed, you can use a web safe font stack to choose several fonts that look similar, and are installed on the various systems that you want to support. If you want to use fonts other than ones pre-installed, as of CSS3, you can use Web Fonts which can be found from libraries like <a href="https://www.google.com/fonts" target="_blank">Google fonts</a> which are licensed under open source licenses.</p>
+
+								<p>How the font stack work is as per below where they will search for Arial and if Arial is not found on the operating systems then it will look for Helvetica (only available on default for Mac) or finally if the first 2 font family is not found, it will use any sans serif font found on the operating systems.</p>
+								<pre><code>font-family: Arial, Helvetica, sans-serif</code></pre>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="4">
+							<li>
+								<p><strong>Web Design styleguide</strong></p>
+								<p>It is always encourage for designers to start off the project by creating a styleguide. When the initial mockups is submitted and near signing off, the styleguide can be shared with the developers so that they can convert the styleguide into codes.</p>
+
+								<p class="fragment">Styleguide will usually contains:</p>
+								<ul>
+									<li class="fragment">Font family</li>
+									<li class="fragment">Font sizes for the Heading tags</li>
+									<li class="fragment">Color palattes for the site</li>
+									<li class="fragment">Buttons (Primary/Secondary looks, states of buttons)</li>
+									<li class="fragment">and etc...</li>
+								</ul>
+								<p class="notes" style="text-align: center;">Continue to on next slide</p>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="4">
+							<li>
+								<p><strong>Web Design styleguide</strong></p>
+								<p>With the styleguide, it helps both design and development team keep the stylings consistent and help smoothen the transition with new team members into the projects.</p>
+								<p>Some samples of web design styleguide:</p>
+								<ul>
+									<li><a href="https://standards.usa.gov/visual-style/#pairings">U.S. web design</a></li>
+									<li><a href="https://design.atlassian.com/brand/typography/">Atlassian Design Brand guide</a></li>
+								</ul>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="5">
+							<li>
+								<p><strong>Inconsistency support across browsers</strong></p>
+								<p>Design with elements such as rounded corners, drop-shadow and etc. might vary due to the support across the different browers (Internet Explorer, Firefox, Chrome, Safari). Especially older IE where I will usually drop rounded corners and drop-shadow.</p>
+								<p>Previous techniques to implement such visual effects for static website is too cumbersome to implement into responsive website context hence it will be good to note on this.</p>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="6">
+							<li>
+								<p><strong>Design systems</strong></p>
+								<ul>
+									<li>is built out of the core components of <u>typography</u>, <u>layout</u>, <u>shape</u> or <u>form, and colour</u></li>
+									<li>core components are used consistently across your product to create a cohesive feel, whether it's from one element to another, page to page, or viewport width to viewport width</li>
+									<li>as we are designing for the web, hence it will make sense to have a design pattern/methodology close to how the webpages will be built: <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Web Design</a></li>
+								</ul>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<p>For more in-depth reading:</p>
+						<dl>
+							<dt>Overall guidelines/best practices for designing RWD:</dt>
+							<dd><a href="http://www.sitepoint.com/top-10-web-design-mistakes/" target="_blank">Top 10 website design mistakes</a></dd>
+							<dd><a href="http://blog.teamtreehouse.com/psd-to-html-is-dead" target="_blank">PSD to HTML is dead</a></dd>
+							<dd><a href="https://imagebox.com/industry/why-your-website-doesnt-look-the-same-in-every-browser/" target="_blank">Why your website doesn't look the same in every browser</a></dd>
+							<dd><a href="http://www.webdesignerdepot.com/2015/04/the-ultimate-guide-to-getting-started-in-web-design/" target="_blank">The ultimate guide to getting started in web design</a></dd>
+							<dd><a href="https://econsultancy.com/blog/64823-the-five-golden-rules-of-responsive-web-design/" target="_blank">The five golden rules of responsive web design</a></dd>
+							<dt>Design systems/methodology:</dt>
+							<dd><a href="https://24ways.org/2012/design-systems/" target="_blank">Design systems</a></dd>
+							<dd><a href="http://atomicdesign.bradfrost.com/table-of-contents/" target="_blank">Deep dive into Atomic Design</a></dd>
+						</dl>
+					</section>
+				</section>
+				<!-- slide 2 -->
+						
+				<!-- slide 3 -->
+				<section>
+					<section data-background="#ffffff">
+						<h2>Examples of good responsive web design</h2>
+						<div class="notes">at least for me... haha</div>
+					</section>
+					<section>
+						<ol>
+							<li><a href="http://squaresconference.com/" target="_blank">Squares conference</a></li>
+							<li><a href="http://www.plasticbcn.com/en" target="_blank">Plastic</a></li>
+							<li><a href="http://charactersf.com/" target="_blank">Character</a></li>
+							<li><a href="https://www.squarespace.com/" target="_blank">SQUARESPACE</a></li>
+							<li><a href="http://www.market-me.fr/" target="_blank">Market Me</a></li>
+						</ol>
+					</section>
+				</section>
+				<!-- slide 3 -->
+
+				<!-- slide 4 -->
+				<section>
+					<section>
+						<h2>Final bits.</h2>
+					</section>
+					<section>
+						<figure style="text-align: center;">
+							<img data-src="images/adobe-settings.png" style="max-width: 75%;" />
+							<figcaption class="notes">Web based design should be done in the unit of <strong>pixels (px)</strong>, in screen resolution of <strong>72 DPI</strong>.</figcaptions>
+						</figure>
+					</section>
+					<section>
+						<ul>
+							<li><a href="https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/" target="_blank">16px for the body copy</a></li>
+							<li>* Minimum font size of 16px — Apple recommends 17-22px, Google recommends 18-22px. (We've found 16px Georgia to be nice and readable.) * Call-to-action touch targets, such as buttons, should be at least 46px squared (Apple recommends 44px squared, Google recommends 48px squared — we're splitting the difference). * Avoid clustering several links together in your copy. It makes individual links very difficult to access.</li>
+							<li>In web, we are not able to achieve kerning of letters but we can do tracking for the text copy. ** note: there is inconsistency across all browsers hence the spacings around the letters of the words will differ.</li>
+						</ul>
+					</section>
+					<section>
+						<p>Sometimes there are limitation to quality of graphical/video assets, hence a need for maximum container width limit.</p>
+
+						<figure style="text-align: center;">
+							<!-- <div id="resolution-ww-monthly-201505-201604-bar" width="600" height="400" style="width:600px; height: 400px; margin: 0 auto 30px;"></div><script type="text/javascript" src="//www.statcounter.com/js/fusioncharts.js"></script><script type="text/javascript" src="//gs.statcounter.com/chart.php?resolution-ww-monthly-201505-201604-bar"></script> -->
+							<img data-src="images/StatCounter-resolution-ww-monthly-201505-201604-bar.png" style="max-width: 75%;" />
+							<figcaption class="notes">If we will like to cater for the screensize 1920x1080 then we will be able to design within the canvas of 1900px width with clearance of 15px on both side, else if we will like to cater 1366x768 as our maximum gauge then we can design in canvas of 1200px width with clearance of 15px on both side. (Source from: <a href="http://gs.statcounter.com/#resolution-ww-monthly-201505-201604-bar" target="_blank">statscounter.com</a>)</figcaptions>
+						</figure>
+					</section>
+					<section>
+						<p>Design and cut up for web are recommended to be done on Photoshop as Photoshop has a "save for web". Quality for saving .jpg will only need <a href="https://medium.com/@duhroach/reducing-jpg-file-size-e5b27df3257c#a315" target="_blank">to be set at 75%</a>.</p>
+						
+						<figure style="text-align: center;">
+							<img data-src="images/save-for-web.png" style="max-width: 75%;" />
+							<figcaption class="notes">Save for web option will apply image compressor to the image and hence helping to optimise image quality for web use. Check out the <a href="https://medium.com/@duhroach/reducing-jpg-file-size-e5b27df3257c#be2f" target="_blank">comparison here</a>.</figcaptions>
+						</figure>
+					</section>
+					<section>
+						<h4>Naming of files like images, PDF and etc. for the web:</h4>
+						<ol>
+							<li>Avoid Spaces in Your Filenames</li>
+							<li>Use Only Small (Lowercase) Letters</li>
+							<li>Put a Descriptive Title or At Least the Main Keywords from the Title in Your Filename<div class="notes">This will help with Google search results. Eg. rather than naming &lt;logo.jpg&gt;, naming more specifically like &lt;amiculum-digital-logo.jpg&gt; will be better.</div></li>
+							<li>Keep the Names Reasonably Short</li>
+							<li>Separate the Words in Your Filenames with Hyphens</li>
+						</ol>
+					</section>
+					<section>
+						<p>Where possible avoid using multiple layers "Blending mode" for visual treatment of graphic which requires transparency as .png files do not support blending modes.</p>
+
+						<p>Here is a method for saving out blending mode layer to .png:</p>
+						<ol>
+							<li>Copy the image you want to multiply. (CtrlA and CtrlC)</li>
+							<li>Make a new 'Black' color layer and click 'add mask'.</li>
+							<li>alt-click the Mask icon, so that you can enter to mask edit mode.</li>
+							<li>Paste your 'multiply' images in the mask (b/w), and then invert it.</li>
+							<li>You will have a black layer with your multiply material masked.</li>
+							<li>You can adjust opacity of that layer to find best looking image. (30~40%?)</li>
+							<li>If you save it as transparent PNG file, you are done.</li>
+						</ol>
+						<p class="notes">It is not perfectly same with 'multiplied image', it will be somewhat dimmed, not that vivid enough, but it is quite useful when you need normal images or textures to apply on top of something.</p>
+					</section>
+					<section>
+						<h4>Animation in responsive design</h4>
+						<p>Animation and responsive design can sometimes feel like they’re at odds with each other. Animation often needs space to do its thing, but RWD tells us that the amount of space we’ll have available is going to change a lot.</p>
+						<p>Smaller viewports mean a smaller stage for your motion to play out on, and this tends to amplify any motion in your animation. Suddenly 100 pixels is <em>really</em> far and multiple moving parts can start looking like they’re battling for space. An effect that looked great on big viewports can become muddled and confusing when it’s reframed in a smaller space.</p>
+					</section>
+					<section>
+						<div>
+							<div style="width: 48%; float: left;">
+								<video controls="" poster="https://media.24ways.org/2015/head/whyy-pensions-big.jpg"><source src="https://media.24ways.org/2015/head/whyy-pensions-big.mp4" type="video/mp4"><source data-src="https://media.24ways.org/2015/head/whyy-pensions-big.webm" type="video/webm"><source data-src="https://media.24ways.org/2015/head/whyy-pensions-big.ogv" type="video/ogg"><a href="https://media.24ways.org/2015/head/whyy-pensions-big.mp4">Open video</a><!-- fallback -->
+								</video>
+							</div>
+							<div style="width: 48%; float: left;">
+								<video controls="" poster="https://media.24ways.org/2015/head/whyy-pensions-small.jpg"><source src="https://media.24ways.org/2015/head/whyy-pensions-small.mp4" type="video/mp4"><source data-src="https://media.24ways.org/2015/head/whyy-pensions-small.webm" type="video/webm"><source data-src="https://media.24ways.org/2015/head/whyy-pensions-small.ogv" type="video/ogg"><a href="https://media.24ways.org/2015/head/whyy-pensions-small.mp4">Open video</a><!-- fallback -->
+								</video>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+					</section>
+					<section>
+						<p>Workflow for designers and front-end developers shared at Asia CSS conference 2015.</p>
+						
+						<iframe width="560" height="315" data-src="https://www.youtube.com/embed/r2mhcIisKRA" frameborder="0" allowfullscreen></iframe>
+
+						<p>Her talk covers a recommended workflow which will help to enhance the working between designers and developers coming from the experience of developers who usually tie up the last bits of projects and pitfalls discovered during development stage are usually too late for actions. Her presentation deck can be found <a href="https://speakerdeck.com/renaysha/responsive-web-bloopers-cssconf-asia-2015-by-aysha-anggraini" target="_blank">here</a>.</p>
+					</section>
+				</section>
+				<!-- slide 4 -->
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				multiplex: {
+			        // Example values. To generate your own, see the socket.io server instructions.
+			        secret: '14628526302585593704', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+			        id: 'a771f1b1062ce8c2', // Obtained from socket.io server
+			        url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+			    },
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+				    { src: 'plugin/multiplex/master.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
