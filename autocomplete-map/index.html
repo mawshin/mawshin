@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <title>Search box autocomplete exercise</title>
+    <head>
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/global.min.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+        	<div class="container-fluid">
+	        	<div class="col-md-4">
+	        		<form id="search-form">
+	        			<label for="pickup-field" class="location-label">Pickup location</label>
+			            <div class="form-group">
+			            	<input id="pickup-input" class="location-input" type="text" value="" placeholder="Pickup location" autocomplete="off" tabindex="1" />
+
+			            	<div class="input--icon">
+			            		<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+			            	</div>
+	        			</div>
+	        			
+			            <ul id="pickup-prediction-list" class="prediction-list">
+			                <!-- Load in autocomplete list -->
+			            </ul>
+			            
+			            <div class="input-icons__direction">
+			            	<div class="destination-line"></div>
+			            </div>
+
+			            <label for="dropoff-field" class="location-label">Drop-off location</label>
+			            <div class="form-group">
+			            	<input id="dropoff-input" class="location-input" type="text" value="" placeholder="Drop-off location" autocomplete="off" tabindex="2" />
+
+			            	<div class="input--icon">
+			            		<i class="fa fa-map-marker" aria-hidden="true"></i>
+			            	</div>
+			            </div>
+			            <ul id="dropoff-prediction-list" class="prediction-list">
+			                <!-- Load in autocomplete list -->
+			            </ul>
+
+			            <button type="button" class="btn btn-default jsFormSubmit">Pin locations</button>
+			        </form>
+	        	</div>
+	        	<div class="col-md-8">
+	        		<div id="map"></div>
+	        	</div>
+	        </div>
+        </div>
+        
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBqHFUq4T3vLg0XNnqK2WKHD6lV5WTTlbU&libraries=places" async></script>
+        <script src="js/global.min.js" async defer></script>
+		
+    </body>
+</html>
