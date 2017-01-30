@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Signage Live</title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/global.css" />
+</head>
+<body class="c-building">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a href="action-config.html" class="c-back--link">&lt; Back</a> 
+		</div>
+		<div class="col-xs-12 text-center">
+			<p>Complete action fields</p>
+			<p class="c-note">Step 5 of 6</p>
+		</div>
+	</div>
+	<div class="row c-services">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="c-service__blue c-services--trigger">
+				<h3>Send me an email</h3>
+				<p>This Action will send you an HTML based email. Images and links are supported.</p>
+
+				<h4>Email address</h4>
+				
+				<form id="actionForm" class="c-form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="actionTrigger" name="actionTrigger" />
+					</div>
+
+					<button type="button" class="btn btn-default jsFormSubmit">Create action</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+<script src="js/init.js"></script>
+</html>

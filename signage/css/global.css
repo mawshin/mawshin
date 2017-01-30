@@ -1,0 +1,120 @@
+body {
+	font-size: 16px;
+}
+
+a {
+	color: #0099FF;
+	text-decoration: underline;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.c-splash {
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center; 
+}
+
+.c-row__blue {
+	background-color: #0099FF;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	padding: 30px 0; 
+}
+
+.c-building {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.c-back--link {
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+	border: 3px solid #efefef;
+	border-radius: 25px; 
+	padding: 5px 15px;
+}
+
+.c-services {
+	font-size: 18px;
+	color: white;
+}
+
+.c-services a {
+	color: white;
+}
+
+.c-services > [class*='col-'] {
+	position: relative;
+}
+
+[class*='c-service'] {
+	padding: 60px 10px;
+	text-align: center;
+}
+
+.c-service__twitter {
+	background-color: #00ABEC;
+}
+
+.c-service__gray {
+	background-color: #666666;
+}
+
+.c-service__dark-gray {
+	background-color: #333333;
+}
+
+.c-service__orange {
+	background-color: #EC7505;
+}
+
+.c-service__green {
+	background-color: #29BF12;
+}
+
+.c-service__blue {
+	background-color: #2468FF;
+}
+
+.c-service__facebook {
+	background-color: #3B579D;
+}
+
+.c-service__purple {
+	background-color: #963484;
+}
+
+.c-service__tumblr {
+	background-color: #35465C;
+}
+
+.c-service__gmail {
+	background-color: #23448B;
+}
+
+.c-services--trigger {
+	padding: 15px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.c-text__orange {
+	color: #EC7505;
+}
+
+.c-note {
+	font-size: 16px;
+	color: #999;
+	font-weight: normal;
+}
+
+.error {
+	color: #b41f22;
+	font-size: 12px;
+}
