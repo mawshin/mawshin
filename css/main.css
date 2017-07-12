@@ -1,4 +1,4 @@
-body {color: #222; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300;}
+body {color: #222; font-family: 'Noto Serif', Serif;}
 header {background: #000; color: #172bae;}
 nav {background: #fff; -webkit-box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15); -moz-box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15); box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15);}
 nav .container {padding-top: 0;}
@@ -13,9 +13,9 @@ nav .active a {background: #eaeaea; color: #000;}
 @media (min-width: 768px) {
     #navbar {float: right;}
 }
-.navbar-brand {font-family: 'Playfair Display', serif; text-transform: uppercase;}
+.navbar-brand {font-family: 'Oxygen', Sans-Serif; text-transform: uppercase;}
 
-.name {color: #e9e9eb; font-family: 'Playfair Display', serif; font-weight: bold; font-size: 4em; line-height: 1; margin-top: .2em;}
+.name {color: #e9e9eb; font-family: 'Oxygen', Sans-Serif; font-size: 4em; line-height: 1; margin-top: .2em;}
 .designation {color: #fff; font-size: 2em; font-weight: 300; padding-bottom: 1.25em;}
 .profile-pic {max-width: 250px; border: 10px solid #fff; margin-top: 4.25em; -webkit-box-shadow: 0px 0px 19px 4px rgba(51,51,51,0.3); -moz-box-shadow: 0px 0px 19px 4px rgba(51,51,51,0.3); box-shadow: 0px 0px 19px 4px rgba(51,51,51,0.3);}
 
@@ -54,12 +54,12 @@ nav .active a {background: #eaeaea; color: #000;}
 
 .sticky-nav {font-size: 14px;}
 nav + section {margin-top: 4.25em;}
-.sticky-nav__name {font-family: 'Playfair Display', serif; font-weight: bold; font-size: 3em; line-height: 1;}
+.sticky-nav__name {font-family: 'Oxygen', Sans-Serif; font-size: 3em; line-height: 1;}
 .sticky-nav__designation {color: #bdbdbd; font-size: 1.5em; font-weight: 300; padding-bottom: 1.25em;}
 .portfolio-list section {border-bottom: 1px solid #dedede; padding: 1.25em 0;}
 .portfolio-list section:first-child {padding-top: 0;}
 .portfolio-list a {background: #fff700; color: #000;}
-.project-title {font-family: 'Playfair Display', serif; font-size: 1.5em; font-weight: bold;}
+.project-title {font-family: 'Oxygen', Sans-Serif; font-size: 1.5em;}
 .project-image {margin: 20px 0;}
 .project-image a {background: transparent; padding: 0;}
 
@@ -68,10 +68,10 @@ nav + section {margin-top: 4.25em;}
     .portfolio-list section {padding: 1.25em;}
 }
 
-h1, h2, h3 {font-family: 'Playfair Display', serif;}
+h1, h2, h3 {font-family: 'Oxygen', Sans-Serif;}
 a {background: #0ac5f4; color: #fff; font-weight: bold; padding: 0 5px;}
 a:hover {background: transparent; color: #0ac5f4; text-decoration: none;}
-u {font-family: 'Playfair Display', serif;}
+u {font-family: 'Oxygen', Sans-Serif;}
 .container {padding-top: 1.25em;}
 section.container {padding-top: 1.75em; padding-bottom: 1.75em;}
 hr.yellow-line {border: 0; height: 1px; background: #fff700 ; background-image: linear-gradient(to right, #fff, #fff700 , #fff);}
@@ -82,7 +82,7 @@ hr.yellow-line {border: 0; height: 1px; background: #fff700 ; background-image: 
     .responsive-break {display: block;}
 }
 
-.font-playfair {font-family: 'Playfair Display', serif;}
+.font-playfair {'Oxygen', Sans-Serif;}
 .font-light {font-weight: 300;}
 .font-normal {font-weight: 400;}
 
