@@ -53,6 +53,7 @@ nav .active a {background: #eaeaea; color: #000;}
 .timePosted {font-size: 12px;}
 
 .sticky-nav {font-size: 14px;}
+.sticky-nav > * {-ms-word-break: break-all; word-break: break-word; word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
 nav + section {margin-top: 4.25em;}
 .sticky-nav__name {font-family: 'PT Sans', Sans-Serif; font-size: 3em; line-height: 1;}
 .sticky-nav__designation {color: #bdbdbd; font-size: 1.5em; font-weight: 300; padding-bottom: 1.25em;}
