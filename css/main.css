@@ -53,7 +53,16 @@ nav .active a {background: #eaeaea; color: #000;}
 .timePosted {font-size: 12px;}
 
 .sticky-nav {font-size: 14px;}
-.sticky-nav > * {-ms-word-break: break-all; word-break: break-word; word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+.sticky-nav > * {
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap; /*Chrome & Safari */ 
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
 nav + section {margin-top: 4.25em;}
 .sticky-nav__name {font-family: 'PT Sans', Sans-Serif; font-size: 3em; line-height: 1;}
 .sticky-nav__designation {color: #bdbdbd; font-size: 1.5em; font-weight: 300; padding-bottom: 1.25em;}
