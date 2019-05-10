@@ -52,9 +52,9 @@
         
         var flag = 0;
         
-        if($('#xhtml-gauge').length > 0){
+        if($('#html-gauge').length > 0){
             function animateChart(){
-                var circlexHTML = new ProgressBar.Circle('#xhtml-gauge', {
+                var circlexHTML = new ProgressBar.Circle('#bootstrap-gauge', {
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
@@ -86,7 +86,7 @@
                     }
                 });
 
-                circleHTML.animate(.75);  
+                circleHTML.animate(.85);  
 
                 var circleJquery = new ProgressBar.Circle('#jquery-gauge', {
                     color: '#000',
@@ -116,11 +116,45 @@
                         value: '0'
                     },
                     step: function(state, bar) {
-                        bar.setText("SCSS");
+                        bar.setText("SASS");
                     }
                 });
 
-                circleSCSS.animate(.5); 
+                circleSCSS.animate(.75); 
+
+                var circleReact = new ProgressBar.Circle('#react-gauge', {
+                    color: '#000',
+                    strokeWidth: 4,
+                    trailWidth: 2,
+                    trailColor: '#cc0000',
+                    duration: 1500,
+                    //fill: '#cc0000',
+                    text: {
+                        value: '0'
+                    },
+                    step: function(state, bar) {
+                        bar.setText("ReactJS");
+                    }
+                });
+
+                circleReact.animate(.75); 
+
+                var circleVue = new ProgressBar.Circle('#vue-gauge', {
+                    color: '#000',
+                    strokeWidth: 4,
+                    trailWidth: 2,
+                    trailColor: '#cc0000',
+                    duration: 1500,
+                    //fill: '#cc0000',
+                    text: {
+                        value: '0'
+                    },
+                    step: function(state, bar) {
+                        bar.setText("VueJS");
+                    }
+                });
+
+                circleVue.animate(.75); 
             };
             
             $('#skills').waypoint(function(direction) {
