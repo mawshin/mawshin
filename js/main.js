@@ -65,7 +65,7 @@
                         value: '0'
                     },
                     step: function(state, bar) {
-                        bar.setText("HTML/CSS");
+                        bar.setText("Twitter Bootstrap");
                     }
                 });
 
