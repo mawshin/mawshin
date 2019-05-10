@@ -137,7 +137,7 @@
                     }
                 });
 
-                circleReact.animate(.75); 
+                circleReact.animate(.2); 
 
                 var circleVue = new ProgressBar.Circle('#vue-gauge', {
                     color: '#000',
@@ -154,7 +154,7 @@
                     }
                 });
 
-                circleVue.animate(.75); 
+                circleVue.animate(.2); 
             };
             
             $('#skills').waypoint(function(direction) {
