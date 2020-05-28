@@ -58,9 +58,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#cc0000',
+                    trailColor: '#fecf07',
                     duration: 1500,
-                    //fill: '#cc0000',
+                    //fill: '#fecf07',
                     text: {
                         value: '0'
                     },
@@ -75,9 +75,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#cc0000',
+                    trailColor: '#fecf07',
                     duration: 1500,
-                    //fill: '#cc0000',
+                    //fill: '#fecf07',
                     text: {
                         value: '0'
                     },
@@ -86,15 +86,15 @@
                     }
                 });
 
-                circleHTML.animate(.85);  
+                circleHTML.animate(.95);  
 
                 var circleJquery = new ProgressBar.Circle('#jquery-gauge', {
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#cc0000',
+                    trailColor: '#fecf07',
                     duration: 1500,
-                    //fill: '#cc0000',
+                    //fill: '#fecf07',
                     text: {
                         value: '0'
                     },
@@ -109,9 +109,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#cc0000',
+                    trailColor: '#fecf07',
                     duration: 1500,
-                    //fill: '#cc0000',
+                    //fill: '#fecf07',
                     text: {
                         value: '0'
                     },
@@ -120,15 +120,15 @@
                     }
                 });
 
-                circleSCSS.animate(.75); 
+                circleSCSS.animate(.9); 
 
                 var circleReact = new ProgressBar.Circle('#react-gauge', {
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#cc0000',
+                    trailColor: '#fecf07',
                     duration: 1500,
-                    //fill: '#cc0000',
+                    //fill: '#fecf07',
                     text: {
                         value: '0'
                     },
@@ -143,9 +143,9 @@
                     color: '#000',
                     strokeWidth: 4,
                     trailWidth: 2,
-                    trailColor: '#cc0000',
+                    trailColor: '#fecf07',
                     duration: 1500,
-                    //fill: '#cc0000',
+                    //fill: '#fecf07',
                     text: {
                         value: '0'
                     },
@@ -154,7 +154,7 @@
                     }
                 });
 
-                circleVue.animate(.2); 
+                circleVue.animate(.4); 
             };
             
             $('#skills').waypoint(function(direction) {

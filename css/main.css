@@ -75,8 +75,8 @@ nav + section {margin-top: 4.25em;}
 }
 
 h1, h2, h3 {font-family: 'PT Sans', Sans-Serif;}
-a {background: #0ac5f4; color: #fff; font-weight: bold; padding: 0 5px;}
-a:hover, a:focus {background: transparent; color: #0ac5f4; text-decoration: none;}
+a {background: #4771b7; color: #fff; font-weight: bold; padding: 0 5px;}
+a:hover, a:focus {background: transparent; color: #4771b7; text-decoration: none;}
 a.highlight {background: #fff700; color: #000; font-size: 16px;}
 u {font-family: 'PT Sans', Sans-Serif;}
 .container {padding-top: 1.25em;}
@@ -84,6 +84,23 @@ section.container {padding-top: 1.75em; padding-bottom: 1.75em;}
 hr.yellow-line {border: 0; height: 1px; background: #fff700 ; background-image: linear-gradient(to right, #fff, #fff700 , #fff);}
 .notes {font-size: 0.75em;}
 .responsive-break {display: inline;}
+
+.timeline {
+    border-bottom: 1px solid rgba(71, 113, 183, 0.4);
+    padding-bottom: 10px;
+}
+
+.timeline li + li {
+    margin-top: 10px;
+}
+
+.experience-list {
+    margin-bottom: 24px;
+}
+
+.experience-list li + li {
+    margin-top: 10px;
+}
 
 @media (min-width: 768px) {
     .responsive-break {display: block;}
