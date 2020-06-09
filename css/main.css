@@ -46,9 +46,9 @@ nav .active a, nav .active a:hover, nav .active a:focus {background: #4771b7; co
     word-break: break-all;
     white-space: normal;
 }
-.user span span {font-weight: normal; margin-left: 15px;}
+.user span span {font-weight: normal; margin-top: 10px; display: block;}
 .user span + span:before {content: '\A';}
-.user span + span {background: #fff700; white-space: pre;}
+.user span + span {background: #4771b7;}
 .tweet {margin-top: 15px;}
 /*.tweet a + a {display: block;}*/
 .timePosted {font-size: 12px;}

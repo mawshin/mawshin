@@ -36,7 +36,8 @@
             // };
 
             var configLikes = {
-                "likes": {"screenName": 'mawshin'},
+                //"likes": {"screenName": 'mawshin'},
+                "profile": {"screenName": 'mawshin'},
                 "domId": 'twitter-fav-list',
                 "maxTweets": 3,
                 "enableLinks": true, 
