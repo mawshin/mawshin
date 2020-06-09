@@ -48,7 +48,8 @@ nav .active a, nav .active a:hover, nav .active a:focus {background: #4771b7; co
 }
 .user span span {font-weight: normal; margin-top: 10px; display: block;}
 .user span + span:before {content: '\A';}
-.user span + span {background: #4771b7; color: white;}
+.user span + span {background-color: #4771b7; color: white; transition: color 0.5s ease, background-color 0.5s ease;}
+.user span + span:hover {background-color: none; color: #4771b7;}
 .tweet {margin-top: 15px;}
 /*.tweet a + a {display: block;}*/
 .timePosted {font-size: 12px;}
@@ -76,7 +77,7 @@ nav + section {margin-top: 4.25em;}
 }
 
 h1, h2, h3 {font-family: 'PT Sans', Sans-Serif;}
-a {background: #4771b7; color: #fff; font-weight: bold; padding: 0 5px;}
+a {background: #4771b7; color: #fff; font-weight: bold; padding: 0 5px; transition: color 0.5s ease, background-color 0.5s ease;}
 a:hover, a:focus {background: transparent; color: #4771b7; text-decoration: none;}
 a.highlight {background: #fff700; color: #000; font-size: 16px;}
 u {font-family: 'PT Sans', Sans-Serif;}
