@@ -49,7 +49,7 @@ nav .active a, nav .active a:hover, nav .active a:focus {background: #4771b7; co
 .user span span {font-weight: normal; margin-top: 10px; display: block;}
 .user span + span:before {content: '\A';}
 .user span + span {background-color: #4771b7; color: white; transition: color 0.5s ease, background-color 0.5s ease;}
-.user span + span:hover {background-color: none; color: #4771b7;}
+.user span:hover + span {background-color: none; color: #4771b7;}
 .tweet {margin-top: 15px;}
 /*.tweet a + a {display: block;}*/
 .timePosted {font-size: 12px;}
