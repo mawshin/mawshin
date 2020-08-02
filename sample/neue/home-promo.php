@@ -9,16 +9,10 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <meta name="description" content="A new you awaits at Singapore’s newest hair salon. Flaunt it with the help of a team of top hair artists, for an iconic style that’s all you, all NEUE.">
-    <meta name="keywords" content="hair salon, singapore, top stylists, hair styling, hair colouring, hair treatment, rebonding, perm techniques, raffles shopping centre">
-    
-    <meta property="og:url" content="http://www.neue.sg/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="NEUE Hair Salon - A new experience in hairstyling awaits" />
-    <meta property="og:description" content="A new you awaits at Singapore’s newest hair salon. Flaunt it with the help of a team of top hair artists, for an iconic style that’s all you, all NEUE." />
-    <meta property="og:image" content="http://www.neue.sg/staging/images/neue_FBshare.jpg" />
-    <meta property="og:site_name" content="NEUE Hair Salon" />
-    <meta property="fb:app_id" content="489290497899634" />
+    <!-- <meta name="description" content="A new you awaits at Singapore’s newest hair salon. Flaunt it with the help of a team of top hair artists, for an iconic style that’s all you, all NEUE.">
+    <meta name="keywords" content="hair salon, singapore, top stylists, hair styling, hair colouring, hair treatment, rebonding, perm techniques, raffles shopping centre"> -->
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
     
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/favicon-144.png">
