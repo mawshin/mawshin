@@ -44,8 +44,8 @@
 <body id="booking-bg">
 	<div id="landscape"><p><b>Rotate Device to "Portrait"</b></p></div>
     
-    <?php include_once "include/nav.html"; ?>
-    
+    <div id="nav"></div>
+
     <section id="content-area">
         <div id="skewWrapper" class="hidden-xs">
             <div id="blackSkew"></div>
@@ -187,6 +187,11 @@
     <script src="scripts/velocity.min.js"></script>
     <script src="scripts/velocity.ui.js"></script>
     <script src="scripts/global.js"></script>
-
+    
+    <script type='text/javascript'>
+        $.get('include/nav.html',function(response){ 
+            $('#nav').html(response); 
+        });
+    </script>
 </body>
 </html>

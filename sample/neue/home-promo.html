@@ -54,7 +54,7 @@
     
     <div id="landscape"><p><b>Rotate Device to "Portrait"</b></p></div>
     
-    <?php include_once "include/nav.html"; ?>
+    <div id="nav"></div>
     
     <div id="promo-overlay-wrapper" class="modal">
         <div class="overlay-close">
@@ -238,6 +238,10 @@
     	$(function(){
 			TweenMax.from("#test", 1, {right:"-200%", skewX:45, ease: Power4.easeOut});
 		});
+
+        $.get('include/nav.html',function(response){ 
+            $('#nav').html(response); 
+        });
     </script>
     
 </body>

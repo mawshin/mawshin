@@ -44,7 +44,7 @@
 <body id="booking-bg">
 	<div id="landscape"><p><b>Rotate Device to "Portrait"</b></p></div>
 	
-    <?php include_once "include/nav.html"; ?>
+    <div id="nav"></div>
         
     <section id="contact-wrapper" class="container-fluid">
     	<div class="row">
@@ -128,7 +128,9 @@
     	$(function(){
 			$('[rel="clickover"]').clickover();
 						
-			
+			$.get('include/nav.html',function(response){ 
+                $('#nav').html(response); 
+            });
 		});
     </script>
 
