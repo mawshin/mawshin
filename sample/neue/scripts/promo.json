@@ -1,0 +1,75 @@
+{ 
+    "promo": [ { 
+        "poster": "images/home/promo1.jpg",
+        "callout": "Opening special!",
+        "title": "20% OFF for Keratin Hair Spa Treatment packages for 1st-time Customers (worth $480)",
+        "description": "This Keratin - based treatment seeks to leave your hair looking smooth, straighter and more manageable. Sign up as our new customers and enjoy this promotion.",
+        "cta": {
+            "text": "Book with us now1",
+            "link": "http://yahoo.com"
+        },
+        "terms": [ {
+            "point": "For first-time customers aged 18 and above only."
+		}, {
+            "point": "Appointment required."
+		}, {
+            "point": "Only be redeemed at Raffles Place outlet only."
+		}, {
+            "point": "This deal cannot be used in conjunction with other promotions and discounts."
+        } ]
+    }, {
+        "poster": "images/home/promo2.jpg",
+        "callout": "",
+        "title": "2) 20% OFF for Keratin Hair Spa Treatment packages for 1st-time Customers (worth $480)",
+        "description": "2) This Keratin - based treatment seeks to leave your hair looking smooth, straighter and more manageable. Sign up as our new customers and enjoy this promotion.",
+        "cta": {
+            "text": "Book now2",
+            "link": "booking/"
+        },
+        "terms": [ {
+            "point": "2For first-time customers aged 18 and above only."
+		}, {
+            "point": "2Appointment required."
+		}, {
+            "point": "2Only be redeemed at Raffles Place outlet only."
+		}, {
+            "point": "2This deal cannot be used in conjunction with other promotions and discounts."
+        } ]
+    }, {
+        "poster": "images/home/promo3.jpg",
+        "callout": "Opening special!",
+        "title": "3) 20% OFF for Keratin Hair Spa Treatment packages for 1st-time Customers (worth $480)",
+        "description": "3) This Keratin - based treatment seeks to leave your hair looking smooth, straighter and more manageable. Sign up as our new customers and enjoy this promotion.",
+        "cta": {
+            "text": "Book with us now",
+            "link": "http://google.com"
+        },
+        "terms": [ {
+            "point": "3For first-time customers aged 18 and above only."
+		}, {
+            "point": "3Appointment required."
+		}, {
+            "point": "3Only be redeemed at Raffles Place outlet only."
+		}, {
+            "point": "3This deal cannot be used in conjunction with other promotions and discounts."
+        } ]
+    }, {
+        "poster": "images/home/promo1.jpg",
+        "callout": "Opening special!",
+        "title": "20% OFF for Keratin Hair Spa Treatment packages for 1st-time Customers (worth $480)",
+        "description": "This Keratin - based treatment seeks to leave your hair looking smooth, straighter and more manageable. Sign up as our new customers and enjoy this promotion.",
+        "cta": {
+            "text": "Book with us now1",
+            "link": "http://yahoo.com"
+        },
+        "terms": [ {
+            "point": "For first-time customers aged 18 and above only."
+		}, {
+            "point": "Appointment required."
+		}, {
+            "point": "Only be redeemed at Raffles Place outlet only."
+		}, {
+            "point": "This deal cannot be used in conjunction with other promotions and discounts."
+        } ]
+    } ]
+}

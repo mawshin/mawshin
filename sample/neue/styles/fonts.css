@@ -1,0 +1,51 @@
+/* Webfont: Univers-65Bold */
+@font-face {
+    font-family: 'BUnivers65Bold';
+    src: url('../fonts/Univers-65Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Univers-65Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Univers-65Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Univers-65Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Univers-65Bold.svg#Univers-65Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Univers-55 */
+@font-face {
+    font-family: 'Univers55';
+    src: url('../fonts/Univers-55.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Univers-55.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Univers-55.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Univers-55.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Univers-55.svg#Univers-55') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Univers-45Light */
+@font-face {
+    font-family: 'LUnivers45Light';
+    src: url('../fonts/Univers-45Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Univers-45Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Univers-45Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Univers-45Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Univers-45Light.svg#Univers-45Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Moon-Bold */
+@font-face {
+    font-family: 'Moon';
+    src: url('../fonts/Moon-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Moon-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Moon-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Moon-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Moon-Bold.svg#Moon-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
