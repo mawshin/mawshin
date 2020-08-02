@@ -395,7 +395,7 @@ jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeO
             
         };
 		
-		$('#menu').click(function(){
+		$(document).on('click', '#menu', function(){
 			ga('send', 'event', 'button', 'click', 'menu');
 			
 			$('body').toggleClass('modal-open');
