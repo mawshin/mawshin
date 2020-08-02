@@ -81,6 +81,7 @@ a {background: #4771b7; color: #fff; font-weight: normal; padding: 0 5px; transi
 a:hover, a:focus {background: transparent; color: #4771b7; text-decoration: none;}
 a.highlight {background: #fff700; color: #000; font-size: 16px;}
 u {font-family: 'Roboto', sans-serif;}
+video {outlline: 0;}
 .container {padding-top: 1.25em;}
 section.container {padding-top: 1.75em; padding-bottom: 1.75em;}
 hr.yellow-line {border: 0; height: 1px; background: #fff700 ; background-image: linear-gradient(to right, #fff, #fff700 , #fff);}
