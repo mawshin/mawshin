@@ -172,9 +172,14 @@
     
     // var pass = "2530b43a2b667f0ffc3586ab016950d20cd20650", user = "35675e68f4b5af7b995d9205ad0fc43842f16450";
     // var cookieExpiry = 15; //num of minutes
+
+    var listView = "";
     
-    if($('#loginform').length > 0){
-        var pass = "43a3a3941ca9c87acb4354c2740e9c36ab60d94f", user = "35675e68f4b5af7b995d9205ad0fc43842f16450";
+    if($('#loginform').length > 0) {
+        var pass = "43a3a3941ca9c87acb4354c2740e9c36ab60d94f", 
+        user = "35675e68f4b5af7b995d9205ad0fc43842f16450",
+        pass2= "ab87137e2eaf3eeb1f5fdabeca38e3514d50eae8";
+
         var cookieExpiry = 15; //num of minutes
 
         if($('#loginform').length > 0){
@@ -183,18 +188,27 @@
             $('#submit').click(function(){
                 $('#loginform').submit(function(e){
                     e.preventDefault();
+
                     var hashPass = CryptoJS.SHA1($('#password').val()).toString(CryptoJS.enc.Hex);
                     var hashUser = CryptoJS.SHA1($('#username').val()).toString(CryptoJS.enc.Hex);
 
-                    if(hashPass === pass && hashUser === user)
-                    {
+                    if(hashPass === pass && hashUser === user) {
                         var currentDate = new Date();
                         var expiryDate = new Date(currentDate.getTime() + (cookieExpiry * 60 * 1000));
+                        
+                        listView = "simple";
+
                         Cookies.set('access', expiryDate , { expires: expiryDate });
                         setTimeout(function(){ window.location.href="portfolio-listing.html" }, 1);
-                    }
-                    else
-                    {
+                    } else if(hashPass === pass2 && hashUser === user) {
+                        var currentDate = new Date();
+                        var expiryDate = new Date(currentDate.getTime() + (cookieExpiry * 60 * 1000));
+
+                        listView = "full";
+
+                        Cookies.set('access', expiryDate , { expires: expiryDate });
+                        setTimeout(function(){ window.location.href="portfolio-listing.html" }, 1);
+                    } else {
                         alert("Invalid credential, please contact me at mawshin@hotmail.sg and I'll share the login with you! Thanks.");
                     }
                 });
@@ -206,9 +220,11 @@
     if($('.portfolio-list').length > 0){
         if( Cookies.get('access') === undefined ){
             window.location.href = "portfolio.html";
-        } else {
+        } else if(listView === 'simple') {
             $('.portfolio-list').load('include/listing.html');   
-        }   
+        } else if(listView === 'full') {
+            $('.portfolio-list').load('include/listings.html');  
+        }
     }
 
     $('.navbar-nav a').click(function(){
