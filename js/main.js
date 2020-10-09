@@ -220,10 +220,12 @@
     if($('.portfolio-list').length > 0){
         if( Cookies.get('access') === undefined ){
             window.location.href = "portfolio.html";
-        } else if(listView === 'simple') {
-            $('.portfolio-list').load('include/listing.html');   
-        } else if(listView === 'full') {
-            $('.portfolio-list').load('include/listings.html');  
+        } else {
+            if(listView === 'simple') {
+                $('.portfolio-list').load('include/listing.html');   
+            } else if(listView === 'full') {
+                $('.portfolio-list').load('include/listings.html');  
+            }
         }
     }
 
