@@ -223,8 +223,12 @@
         }
     }
 
-    $('.navbar-nav a').click(function(){
-        ga('send', 'event', 'navBar', 'Click', $(this).text());
+    $('.navbar-nav a').click(function() {
+        //ga('send', 'event', 'navBar', 'Click', $(this).text());
+
+        gtag('event', 'navBar', {
+          'clicked': $(this).text()
+        });
     });
 
 })(jQuery);
